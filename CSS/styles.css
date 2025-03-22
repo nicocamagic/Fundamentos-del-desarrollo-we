@@ -1,0 +1,101 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Menú de navegación */
+nav {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+
+/* Contenedor para hacer la tabla desplazable en móviles */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+}
+
+/* Tabla de atributos CSS */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background: #333;
+    color: white;
+}
+
+/* Imágenes */
+img {
+    width: 50px;
+    transition: transform 0.3s;
+    height: 500px;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+/*Diseño responsive para móviles*/
+@media screen and (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+    nav ul li {
+        display: block; /* Menú en columna */
+        margin: 10px 0;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Hace la tabla más accesible en pantallas pequeñas */
+    table {
+        width: 100%; /* Ocupar todo el ancho */
+        font-size: 14px; /* Texto más pequeño */
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    /* Imágenes más pequeñas para que se vean bien */
+    img {
+        width: 1000px;
+    }
+}
